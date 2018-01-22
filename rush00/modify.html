@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html id='HTML' xmlns:og="http://ogp.me/ns#" lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>SpaceX - Modify</title>
+	<meta name="Content-Language" content="fr">
+	<meta name="Description" content="">
+	<meta name="keyword" content="">
+	<meta name="Subject" content="">
+	<meta name="Author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="Copyright" content="© 2018 42. All rights reserved.">
+	<link rel="icon" type="image/png" href="asset/icon/favicon.png" />
+		
+	<!-- ******* CSS ***************** -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cross.css">
+	<link rel="stylesheet" type="text/css" href="css/modify.css">
+</head>
+
+<body>
+<!-- ******* FORMULAIRE ***************** -->
+	<section class="background_menu" id="page_account-modify">
+		<!-- Form -->
+          <form method="post" action="php/modify_account.php" accept-charset="utf-8">
+
+			<label for="login_email"><p>Email</p></label>
+			<br/>
+			<input type="email" name="modify_email" maxlength="40" required />
+			
+			<label for="modify_old_password"><p>Old password</p></label>
+			<br/>
+			<input type="password" name="modify_old_password" maxlength="20" required />
+
+			<label for="modify_new_password"><p>New password</p></label>
+			<br/>
+			<input type="password" name="modify_new_password" maxlength="20" required />
+
+			<p class="delete"><a href="delete.html">DELETE ACCOUNT</a></p>
+        	<p class="home"><a href="index.php">GO BACK HOME</a></p>
+        	<!-- SIGN IN -->
+			<input type="submit" name="go_modify_account" value="modify" class="modify_submit"/>
+          </form>
+          <!-- /end Form -->
+	</section>
+</body>
+</html>

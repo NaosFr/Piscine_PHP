@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html id='HTML' xmlns:og="http://ogp.me/ns#" lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>SpaceX - Login</title>
+	<meta name="Content-Language" content="fr">
+	<meta name="Description" content="">
+	<meta name="keyword" content="">
+	<meta name="Subject" content="">
+	<meta name="Author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="Copyright" content="© 2018 42. All rights reserved.">
+	<link rel="icon" type="image/png" href="asset/icon/favicon.png" />
+		
+	<!-- ******* CSS ***************** -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cross.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+<!-- ******* FORMULAIRE ***************** -->
+	<section class="background_menu" id="page_account-login">
+		<!-- Form -->
+          <form method="post" action="php/login.php" accept-charset="utf-8">
+
+			<label for="login_email"><p>Email</p></label>
+			<br/>
+			<input type="email" name="login_email" maxlength="40" required />
+			
+
+			<label for="login_password"><p>Password</p></label>
+			<br/>
+			<input type="password" name="login_password" maxlength="20" required />
+
+        	<p class="register"><a href="register.html">Register</a></p>
+        	<!-- SIGN IN -->
+			<input type="submit" name="go_login_account" value="sign in" class="login_submit"/>
+          </form>
+          <!-- /end Form -->
+	</section>
+</body>
+</html>

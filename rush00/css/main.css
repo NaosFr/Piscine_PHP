@@ -1,0 +1,249 @@
+@font-face {
+	font-family: 'Quicksand-Light';
+	src: url('../asset/font/Quicksand-Light.ttf');
+}
+@font-face {
+	font-family: 'Anton-Regular';
+	src: url('../asset/font/Anton-Regular.ttf');
+}
+@font-face {
+	font-family: 'Quicksand-Regular';
+	src: url('../asset/font/Quicksand-Regular.ttf');
+}
+
+h2{
+	font-family: 'Anton-Regular';
+  font-style: normal;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+h3{
+	font-family: 'Quicksand-Regular';
+  font-style: normal;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, p, a, .register_submit, .login_submit, label{
+  font-family: 'Quicksand-Light';
+  font-style: normal;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	overflow: auto;
+  background-color: white;
+  position: relative;
+  background-image: url(../asset/img/background.jpg);
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*****************************************************************
+  FLOAT MENU
+*****************************************************************/
+
+header{
+  width: 100%;
+  height: 80px;
+  z-index: 3;
+  position: fixed;
+  background-color: white;
+  -webkit-box-shadow: 0px 11px 26px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 11px 26px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 11px 26px -13px rgba(0,0,0,0.75);
+}
+
+.float_menu_rigth_achat, .float_menu_rigth_achat{
+  display: inline-block;
+}
+
+.float_menu_rigth{
+  width: 100px;
+  height: 80px;
+  float: right;
+  border-left: 1px solid #cac5c5;
+  position: relative;
+  z-index: 10;
+}
+
+.float_menu_rigth_achat{
+  width: 160px;
+  height: 80px;
+  float: right;
+  position: relative;
+}
+
+.float_menu_middle{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  display: -webkit-flex;
+}
+
+.logo{
+  width: 300px;
+  margin-bottom: 10px;
+  position: relative;
+  vertical-align: middle;
+}
+.user, .cart, .buy{
+  width: 30px;
+  margin-right:  35px;
+  margin-top:  25px;
+  position: relative;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+.ul_log{
+  display: none;
+    background-color: #ffffff;
+    width: 100px;
+    position: relative;
+    cursor: pointer;
+    list-style-type: none;
+    text-align: center;
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+      -webkit-box-shadow: 0px 11px 26px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 11px 26px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 11px 26px -13px rgba(0,0,0,0.75);
+}
+
+.ul_log a{
+text-decoration: none;
+  color: black;
+}
+
+.ul_log li{
+  font-size: 18px;
+  padding: 8px 16px;
+  
+}
+
+.ul_log li:hover{
+  background-color: #e0e0e0;;
+}
+
+.float_menu_rigth:hover .ul_log{
+  display: block;
+}
+
+/*****************************************************************
+  BACKGROUND MENU
+*****************************************************************/
+
+.background_menu{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  display: -webkit-flex;
+}
+
+.title_square{
+  position: relative;
+  font-size: 3.5vw;
+  color: white; 
+  padding: 20px;
+  border: 1px solid white;
+  background-color: #262626bf;
+  -webkit-transition: .5s ease-out;
+  -moz-transition: .5s ease-out;
+  -o-transition: .5s ease-out;
+  -ms-transition: .5s ease-out;
+  transition: .5s ease-out;
+}
+
+.title_square:hover{
+  background-color: #f9f2f254;
+}
+
+/*****************************************************************
+  NAV SHOP
+*****************************************************************/
+
+.nav_shop{
+  width: 0px;
+  height: 100%;
+  top: 0px;
+  z-index: 2;
+  color: white;
+  position: fixed;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  display: -webkit-flex;
+  background-color: #262626bf;
+}
+.nav_shop ul{
+  display: none;
+  width: 100%;
+  margin-left: -40px;
+}
+
+.nav_shop ul a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav_shop ul a li{
+  display: block;
+  font-style: initial;
+  font-size: 20px;
+  padding: 1px 0px;
+  cursor: pointer;
+}
+
+.nav_shop ul a li p{
+  margin-left: 15%;
+  margin-bottom: 5px;
+  transition-property: all;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+}
+
+.nav_shop ul a li:hover p{
+  margin-left: 20%;
+}
+
+.nav_shop hr{
+  width: 70%;
+}

@@ -1,0 +1,77 @@
+.div_admin{
+    position: relative;
+    bottom: 0px;
+    overflow: auto;
+    text-align: center;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    -webkt-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.61), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.61), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.div_admin form{
+    display: inline-block;
+}
+
+.div_admin form p{
+    margin: 0;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.div_admin input{
+    border: 1px solid #e2e2e2;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 90px;
+}
+
+.div_admin input[type="submit"]{
+    background-color: #999ba7;
+}
+
+.container{
+    
+    width: 100%;
+}
+hr{
+    margin-top: 20px;
+}
+
+/*****************************************************************
+  DISPLAY
+*****************************************************************/
+
+.display{
+    position: relative;
+    bottom: 0px;
+    overflow: auto;
+    text-align: center;
+    width: 360px;
+    height: 500px;
+    margin-right: 24px;
+    background-color: white;
+    border-radius: 5px;
+    -webkt-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0 4px 6px rgba(50,50,93,.61), 0 1px 3px rgba(0,0,0,.08);
+    box-shadow: 0 4px 6px rgba(50,50,93,.61), 0 1px 3px rgba(0,0,0,.08);
+}
+
+table{
+    background-color: #eaeaea;
+}
+
+.menu{
+    background-color: #bbb8b8;
+}
+td{
+    
+    margin: 0;
+    font-size: 11px;
+}

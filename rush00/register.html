@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html id='HTML' xmlns:og="http://ogp.me/ns#" lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>SpaceX - Register</title>
+	<meta name="Content-Language" content="fr">
+	<meta name="Description" content="">
+	<meta name="keyword" content="">
+	<meta name="Subject" content="">
+	<meta name="Author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="Copyright" content="© 2018 42. All rights reserved.">
+	<link rel="icon" type="image/png" href="asset/icon/favicon.png" />
+
+	<!-- ******* CSS ***************** -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cross.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body>
+<!-- ******* FORMULAIRE ***************** -->
+	<section class="background_menu" id="page_account-register">
+		<!-- Form -->
+        <form method="post" action="php/create_account.php" accept-charset="utf-8">
+
+			<label for="create_email"><p>Email</p></label>
+			<br/>
+			<input type="email" name="create_email" maxlength="40" required />
+			
+			<label class="font_light" for="create_password"><p>Password</p></label>
+			<br/>
+			<input type="password" name="create_password" maxlength="20" minlength="5" required />
+			
+			
+			<p class="register"><a href="login.html">Login</a></p>
+			<!-- CREATE ACCOUNT -->
+			<input type="submit" name="create_account" value="create account" class="register_submit"/>
+		</form>
+	</section>
+</body>
+</html>

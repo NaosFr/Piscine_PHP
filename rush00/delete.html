@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html id='HTML' xmlns:og="http://ogp.me/ns#" lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>SpaceX - Delete</title>
+	<meta name="Content-Language" content="fr">
+	<meta name="Description" content="">
+	<meta name="keyword" content="">
+	<meta name="Subject" content="">
+	<meta name="Author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="Copyright" content="© 2018 42. All rights reserved.">
+	<link rel="icon" type="image/png" href="asset/icon/favicon.png" />
+		
+	<!-- ******* CSS ***************** -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/cross.css">
+	<link rel="stylesheet" type="text/css" href="css/delete.css">
+</head>
+
+<body>
+<!-- ******* FORMULAIRE ***************** -->
+	<section class="background_menu" id="page_account-delete">
+		<!-- Form -->
+          <form method="post" action="php/delete_account.php" accept-charset="utf-8">
+
+			<label for="email"><p>Email</p></label>
+			<br/>
+			<input type="email" name="email" maxlength="40" required />
+			
+			<label for="password"><p>Password</p></label>
+			<br/>
+			<input type="password" name="password" maxlength="20" required />
+
+
+        	<p class="home"><a href="index.php">GO BACK HOME</a></p>
+        	<!-- SIGN IN -->
+			<input type="submit" name="go_delete_account" value="delete" class="delete_submit"/>
+          </form>
+          <!-- /end Form -->
+	</section>
+</body>
+</html>
