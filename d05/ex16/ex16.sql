@@ -1,0 +1,1 @@
+SELECT count(a.id_film) AS 'films' FROM historique_membre a WHERE DATEDIFF(date,'2006-11-30') >=0 AND DATEDIFF(date,'2007-07-27') <=0 OR  MONTH(date) = '12' AND  DAY(date) = '24';
