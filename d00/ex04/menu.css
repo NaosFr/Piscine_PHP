@@ -1,0 +1,27 @@
+ul{
+	background-color: #f1f1f1;
+	width: 150px;
+	position: relative;
+	cursor: pointer;
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0; 
+}
+
+ul li{
+	display: none;
+	font-family: monospace;
+	font-style: initial;
+	font-size: 20px;
+	padding: 8px 16px;
+}
+
+ul li:first-child{
+	display: block;
+}
+
+ul:hover li{
+	display: block;
+	background-color: #c3bdbd;
+}
