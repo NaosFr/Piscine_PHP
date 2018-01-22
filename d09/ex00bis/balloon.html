@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Balloon</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			text-align: center;
+			justify-content: center;
+			-webkit-justify-content: center;
+			align-items: center;
+			-webkit-align-items: center;
+			display: -webkit-flex;
+		}
+		div{
+			margin-top: 200px;
+			background-color: red;
+			position: relative;
+  			vertical-align: middle;
+  			vertical-align: baseline;
+			width: 200px;
+			height: 200px;	
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="ballon"></div>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+		var size = 200;
+		var index = 1;
+
+		$("#ballon").click(function(){
+			if (size + 10 > 420)
+				size = 200;
+			else
+				size += 10;
+			if (index == 0)
+				$("#ballon").css("background", "blue");
+			else if (index == 1)
+				$("#ballon").css("background", "green");
+			else if (index == 2)
+				$("#ballon").css("background", "red");
+			$("#ballon").css("width", size+"px");
+			$("#ballon").css("height", size+"px");
+			index++;
+			if (index == 3) {
+				index = 0;
+			}
+  		});
+
+  		$("#ballon")
+  		.on("mouseleave", function(){
+			if (size - 5 < 200)
+				size = size;
+			else
+				size -= 5;
+			if (index == 0)
+				$("#ballon").css("background", "blue");
+			else if (index == 1)
+				$("#ballon").css("background", "green");
+			else if (index == 2)
+				$("#ballon").css("background", "red");
+			$("#ballon").css("width", size);
+			$("#ballon").css("height", size);
+			index++;
+			if (index == 3) {
+				index = 0;
+			}
+		});
+		
+	</script>
+</body>
+</html>

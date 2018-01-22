@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Todo</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			text-align: center;
+			justify-content: center;
+			-webkit-justify-content: center;
+			align-items: center;
+			-webkit-align-items: center;
+			display: -webkit-flex;
+			padding-top: 200px;
+		}
+		
+		#ft_list{
+			width: 500px;
+			background-color: #fffffff2;
+		}
+		
+		#cook{
+			color: white;
+		}	
+	</style>
+</head>
+<body onload="load()">
+
+	<div id="ft_list">
+
+	</div>
+	<p id="cook"></p>
+
+	<button type="button" id="new" onclick="new_todo()" >NEW</button>
+<script type="text/javascript" src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Balloon</title>
+	<style type="text/css">
+		body{
+			background-color: black;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			text-align: center;
+			justify-content: center;
+			-webkit-justify-content: center;
+			align-items: center;
+			-webkit-align-items: center;
+			display: -webkit-flex;
+		}
+		div{
+			margin-top: 200px;
+			background-color: red;
+			position: relative;
+  			vertical-align: middle;
+  			vertical-align: baseline;
+			width: 200px;
+			height: 200px;	
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="ballon"></div>
+	
+	<script type="text/javascript">
+		
+		var size = 200;
+		var index = 1;
+
+		document.getElementById('ballon').addEventListener("click", function( event ) {
+    		var obj = document.getElementById('ballon'); 
+			if (size + 10 > 420)
+				size = 200;
+			else
+				size += 10;
+			if (index == 0)
+				obj.setAttribute('style', 'background: red;');
+			else if (index == 1)
+				obj.setAttribute('style', 'background: green;');
+			else if (index == 2)
+				obj.setAttribute('style', 'background: blue;');
+			obj.style.width = size+"px";
+			obj.style.height = size+"px";
+			index++;
+			if (index == 3) {
+				index = 0;
+			}
+  		}, false);
+
+		document.getElementById('ballon').addEventListener("mouseleave", function( event ) {
+    		var obj = document.getElementById('ballon'); 
+			if (size - 5 < 200)
+				size = size;
+			else
+				size -= 5;
+			if (index == 0)
+				obj.setAttribute('style', 'background: blue;');
+			else if (index == 1)
+				obj.setAttribute('style', 'background: green;');
+			else if (index == 2)
+				obj.setAttribute('style', 'background: red;');
+			obj.style.width = size+"px";
+			obj.style.height = size+"px";
+			index++;
+			if (index == 3) {
+				index = 0;
+			}
+  		}, false);
+		
+	</script>
+</body>
+</html>
